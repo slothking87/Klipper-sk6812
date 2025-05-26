@@ -1,5 +1,15 @@
 # SK6812 LED Control for Klipper
 
+A HUGE thank you to https://github.com/11chrisadams11/Klipper-WS281x_LED_Status - who helped inspire this project. 
+
+Because Klipper cant send the commands to the LED's fast enough, there is no way to get Klipper to run the lights. I get around this by running a script as a background service which monitors a directory. To change the lights - Write a blank file to a set directory and the service reads that and makes the change. 
+
+NOTE - This is only in very basic testing, and Im not good at coding. Lots of help from ChatGPT here to make this work - But it does so far for basic commands - Just need to work on the macros.  Bonus points are the basic macros to turn lights on and off are available via the moonraker add on for Home Assistant meaning we can treat the LED's as a normal light and can activate them using HA. 
+
+
+
+---
+
 This guide walks you through installing and configuring SK6812 RGBW LED strip support for Klipper using a background service and G-code macros.
 
 ---
